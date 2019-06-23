@@ -1,0 +1,26 @@
+{
+  "name": "paraiba-surfing-page",
+  "version": "1.0.0",
+  "description": "��#\u0000p\u0000a\u0000r\u0000a\u0000i\u0000b\u0000a\u0000-\u0000s\u0000u\u0000r\u0000f\u0000i\u0000n\u0000g\u0000-\u0000p\u0000a\u0000g\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingTigre/paraiba-surfing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingTigre/paraiba-surfing-page/issues"
+  },
+  "homepage": "https://github.com/KingTigre/paraiba-surfing-page#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
