@@ -1,5 +1,6 @@
 import React from 'react'
-import {Card,CardTitle,Col,Row} from 'reactstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Card,CardTitle,Col,Row,Button} from 'reactstrap'
 
 const conditions = ()=>{
     return(

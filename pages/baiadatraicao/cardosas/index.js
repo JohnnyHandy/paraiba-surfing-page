@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Seed from '../../../components/seed/seed'
+import Navbar from '../../../components/Navigation/navigation'
 import {NorthWind,NorthEastWind, EastWind, SouthEastWind, SouthWind} from '../../../components/UI/Wind/wind'
 
 const cardosas = (props)=>{
@@ -9,6 +10,7 @@ const cardosas = (props)=>{
 
     return(
         <div>
+                <Navbar/>
                 <Seed beachName={beachName} description={description} />
                 <NorthWind/>
                 <NorthEastWind/>

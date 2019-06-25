@@ -7,6 +7,7 @@ export const NorthWind = ()=>{
             <style jsx>
             {`
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+                @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap')
                 div{
                     height:60px;
                     width:60px;
