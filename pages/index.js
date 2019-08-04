@@ -57,7 +57,7 @@ const landing = ()=>{
                 </Col>
                 <Col>
                     <Card className='zoom img'>
-                        <CardImg src='https://i.imgur.com/phgLcZa.jpg'/>
+                        <CardImg src='https://i.imgur.com/XOjoAvH.png'/>
                         <CardFooter>Mataraca</CardFooter>
                     </Card>
                 </Col>
@@ -93,10 +93,17 @@ const landing = ()=>{
                 transform:scale(1.2);
             }
             img{
+                max-height:100%;
+                max-width:100%
+            }
+            .card-img{
                 max-height:150px
             }
-            .img{
-                height:170px
+            .card-footer{
+                margin:0;
+                max-width:180px;
+                text-align:center;
+                padding:5px 10px;
             }
             `}
         </style>
