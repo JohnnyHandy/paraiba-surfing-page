@@ -25,7 +25,7 @@ const landing = ()=>{
     const [count, setCount] = useState(0);
     
     return(
-    <div>
+    <div className='title'>
         <h1>Welcome to Paraíba Surfing Page</h1>
             <h3>Meet the best surfing breaks in Paraíba, and also the best conditions to surf!</h3>
         <hr/>
@@ -64,6 +64,53 @@ const landing = ()=>{
             </Row>
         </Container>
         <hr/>
+        <Container className='info'>
+            <Row>
+                <Col sm='2'>
+                    Cidade
+                </Col>
+                <Col sm='10'>
+                    Pico
+                </Col>
+            </Row>
+            <Row>
+                <Col sm='2'>
+                    <Row>
+                        Pico 1
+                    </Row>
+                    <Row>
+                        Pico 2
+                    </Row> 
+                    <Row>
+                        Pico 3
+                    </Row>
+                    <Row>
+                        Pico 4
+                    </Row>
+                </Col>
+                <Col sm='4'> 
+                    Foto
+                </Col>
+                <Col sm='4'>
+                    Texto
+                </Col>
+                <Col sm='2'>
+                    <Row>
+                        Swell
+                    </Row>
+                    <Row>
+                        Swell 
+                    </Row>
+                    <Row>
+                        Wind
+                    </Row>
+                    <Row>
+                        Wind
+                    </Row>
+                </Col>
+            </Row>
+        </Container>
+        
         <style jsx global>
             {`
             @import url('https://fonts.googleapis.com/css?family=Bitter|Lato&display=swap');
@@ -75,6 +122,18 @@ const landing = ()=>{
                 text-align:center;
                 display:table;
                 margin:auto;
+            }
+            .info{
+                height:200px;
+                width:600px;
+                background-color:white
+            }
+
+            .info .col{
+                border:1px solid black
+            }
+            .info .row{
+                border:1px solid black
             }
             h1{
                 color:white;
