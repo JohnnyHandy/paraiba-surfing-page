@@ -118,15 +118,16 @@ const landing = ()=>{
                 background:url('https://i.imgur.com/obY0LIq.jpg');
                 background-size: cover;
             }
-            div{
+            div .title{
                 text-align:center;
                 display:table;
                 margin:auto;
             }
             .info{
-                height:200px;
-                width:600px;
-                background-color:white
+                height:auto;
+                width:100%;
+                background-color:white;
+                display:none
             }
 
             .info .col{

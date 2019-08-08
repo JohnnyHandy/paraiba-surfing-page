@@ -6671,7 +6671,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "C:\\Users\\Pichau\\Google Drive\\paraiba-surfing-page\\.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/ec2-user/environment/paraiba-surfing-page/.next");
       return error;
     }
   };
