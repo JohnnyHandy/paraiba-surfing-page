@@ -2,8 +2,8 @@ import React from 'react'
 
 import Seed from '../../../components/seed/seed'
 
-const manaira = (props)=>{
-    const beachName = "Praia de Manaíra (Manaíra's beach)";
+const havaizinho = (props)=>{
+    const beachName = "Havaizinho (Little Hawaii)";
     const description = 'Located in João Pessoa'
 
     return(
@@ -11,4 +11,4 @@ const manaira = (props)=>{
     )
 }
 
-export default manaira
+export default havaizinho

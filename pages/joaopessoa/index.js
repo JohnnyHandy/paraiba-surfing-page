@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/Link'
 
 
-const joaopessoa = (props)=>{
+const joaopessoa = ()=>{
     return(
         <div>   
         <h1>Joao Pessoa beaches</h1>

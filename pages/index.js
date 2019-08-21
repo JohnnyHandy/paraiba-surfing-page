@@ -1,116 +1,24 @@
-import React, {useState} from 'react'
-import {Button,Container,Row,Col,Card,CardImg,CardFooter} from 'reactstrap'
+import React, {useState,useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Info from '../components/UI/Info/info'
+import Selector from '../components/UI/Selector/selector'
 
 
 const landing = ()=>{
-    const items = [
-        {
-          src:'',  
-          altText: 'Slide 1',
-          caption: 'Slide 1'
-        },
-        {
-          src:'',
-          altText: 'Slide 2',
-          caption: 'Slide 2'
-        },
-        {
-          src:'',
-          altText: 'Slide 3',
-          caption: 'Slide 3'
-        }
-      ];
-
-    const [count, setCount] = useState(0);
-    
+    const [spot, setSpotProps] = useState('');
+    const spotChangeHandler=(spot)=>{
+       setSpotProps(spot)
+       console.log(spot)
+    }
     return(
     <div className='title'>
         <h1>Welcome to Paraíba Surfing Page</h1>
             <h3>Meet the best surfing breaks in Paraíba, and also the best conditions to surf!</h3>
         <hr/>
-        <Container>
-            <Row>
-                <Col>
-                    <Card className='zoom img'>
-                            <CardImg src='https://i.imgur.com/WQKMYT0.jpg'/>
-                            <CardFooter>João Pessoa</CardFooter>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className='zoom img'>
-                        <CardImg src='https://i.imgur.com/yG5jADA.jpg'/>
-                        <CardFooter>Cabedelo</CardFooter>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className='zoom img'>
-                        <CardImg src='https://i.imgur.com/6L9glWJ.jpg'/>
-                        <CardFooter>Conde</CardFooter>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className='zoom img'>
-                        <CardImg src='https://i.imgur.com/S68CG5u.jpg'/>
-                        <CardFooter>Baía da Traição</CardFooter>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className='zoom img'>
-                        <CardImg src='https://i.imgur.com/XOjoAvH.png'/>
-                        <CardFooter>Mataraca</CardFooter>
-                    </Card>
-                </Col>
-            </Row>
-        </Container>
+        <Selector spotChange = {(data)=>spotChangeHandler(data)}  />
         <hr/>
-        <Container className='info'>
-            <Row>
-                <Col sm='2'>
-                    Cidade
-                </Col>
-                <Col sm='10'>
-                    Pico
-                </Col>
-            </Row>
-            <Row>
-                <Col sm='2'>
-                    <Row>
-                        Pico 1
-                    </Row>
-                    <Row>
-                        Pico 2
-                    </Row> 
-                    <Row>
-                        Pico 3
-                    </Row>
-                    <Row>
-                        Pico 4
-                    </Row>
-                </Col>
-                <Col sm='4'> 
-                    Foto
-                </Col>
-                <Col sm='4'>
-                    Texto
-                </Col>
-                <Col sm='2'>
-                    <Row>
-                        Swell
-                    </Row>
-                    <Row>
-                        Swell 
-                    </Row>
-                    <Row>
-                        Wind
-                    </Row>
-                    <Row>
-                        Wind
-                    </Row>
-                </Col>
-            </Row>
-        </Container>
-        
+        <Info spot = {spot}/>
         <style jsx global>
             {`
             @import url('https://fonts.googleapis.com/css?family=Bitter|Lato&display=swap');
@@ -127,7 +35,6 @@ const landing = ()=>{
                 height:auto;
                 width:100%;
                 background-color:white;
-                display:none
             }
 
             .info .col{
@@ -172,4 +79,5 @@ const landing = ()=>{
 )}
 
 
-export default landing
+
+export default (landing)
