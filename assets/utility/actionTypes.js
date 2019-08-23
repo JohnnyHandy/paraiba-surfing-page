@@ -1,0 +1,5 @@
+export const JOAO_PESSOA='JOAO_PESSOA'
+export const BAIA_DA_TRAICAO='BAIA_DA_TRAICAO'
+export const CABEDELO='CABEDELO'
+export const MATARACA='MATARACA'
+export const CONDE = 'CONDE'

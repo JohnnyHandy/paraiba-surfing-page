@@ -6,10 +6,10 @@ import Selector from '../components/UI/Selector/selector'
 
 
 const landing = ()=>{
-    const [spot, setSpotProps] = useState('');
-    const spotChangeHandler=(spot)=>{
-       setSpotProps(spot)
-       console.log(spot)
+    const [city, setCity] = useState('');
+    const spotChangeHandler=(city)=>{
+       setCity(city)
+       console.log(city)
     }
     return(
     <div className='title'>
@@ -18,7 +18,7 @@ const landing = ()=>{
         <hr/>
         <Selector spotChange = {(data)=>spotChangeHandler(data)}  />
         <hr/>
-        <Info spot = {spot}/>
+        <Info city = {city}/>
         <style jsx global>
             {`
             @import url('https://fonts.googleapis.com/css?family=Bitter|Lato&display=swap');
@@ -41,7 +41,13 @@ const landing = ()=>{
                 border:1px solid black
             }
             .info .row{
-                border:1px solid black
+            }
+
+            .menu{
+                height:50px;
+                margin:auto;
+                border-style:solid;
+                border-width:0px 1px 0px 1px
             }
             h1{
                 color:white;
