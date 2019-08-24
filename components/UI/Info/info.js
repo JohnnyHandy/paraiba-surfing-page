@@ -11,11 +11,7 @@ const info = (props)=>{
     const spotChangeHandler=(data)=>{
         setSpot(data)
     }
-    useEffect(()=>{
-        spotChangeHandler('')
-    },[props.city])
     let city = {}
-
     switch(props.city){
         case actionTypes.JOAO_PESSOA:
             city={
@@ -130,9 +126,21 @@ const info = (props)=>{
             }
             break
         default:
-            city={}
+            city=null
             break
     }
+    let itemArray = []
+    if(city){
+        for(let i in city.details){
+            itemArray.push(city.details[i].name)
+        }
+    }
+    useEffect(()=>{
+        console.log('useEffect info.js')
+        console.log(spot)
+        spotChangeHandler(itemArray[0])
+    },[props.city])
+    
     
    return props.city !=='' ? (
         <Container className='info'>
@@ -148,7 +156,7 @@ const info = (props)=>{
                 <Col sm='2'>
                    <Menu 
                    spotChange = {(data)=>spotChangeHandler(data)}
-                   details={city.details}/>
+                   itemArray = {itemArray}/>
                 </Col>
                 <Col sm='4'> 
                     Foto
