@@ -33,7 +33,7 @@ const landing = ()=>{
                 margin:auto;
             }
             .info{
-                height:auto;
+                height:350px;
                 width:100%;
                 background-color:white;
             }
@@ -41,11 +41,11 @@ const landing = ()=>{
             .info .col{
                 border:1px solid black
             }
-            .info .row{
+            .infoMenu{
+                height:auto
             }
 
             .menu{
-                height:50px;
                 margin:auto;
                 border-style:solid;
                 border-width:0px 1px 0px 1px

@@ -7,10 +7,9 @@ export const NorthWind = ()=>{
             <style jsx>
             {`
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
-                @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap')
                 div{
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#12f94c;
                     display:flex;
                     align-items:center;
@@ -18,9 +17,9 @@ export const NorthWind = ()=>{
                     text-align:center;
                     background-color:#a5d4ff;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:40px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #12f94c
                 }
             `}
@@ -38,8 +37,8 @@ export const NorthEastWind = ()=>{
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
                     text-align:center;
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#30ba80;
                     display:flex;
                     align-items:center;
@@ -47,9 +46,9 @@ export const NorthEastWind = ()=>{
                     text-align:center;
                     background-color:#a5d4ff;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:30px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #30ba80
                 }
             `}
@@ -67,8 +66,8 @@ export const EastWind = ()=>{
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
                     text-align:center;
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#f2e237;
                     display:flex;
                     align-items:center;
@@ -76,9 +75,9 @@ export const EastWind = ()=>{
                     text-align:center;
                     background-color:#a5d4ff;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:40px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #f2e237
                 }
             `}
@@ -95,8 +94,8 @@ export const SouthEastWind = ()=>{
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
                     text-align:center;
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#db8f0d;
                     display:flex;
                     align-items:center;
@@ -104,9 +103,9 @@ export const SouthEastWind = ()=>{
                     text-align:center;
                     background-color:#a5d4ff;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:30px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #f2e237
                 }
             `}
@@ -124,8 +123,8 @@ export const SouthWind = ()=>{
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
                     text-align:center;
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#f93e13;
                     display:flex;
                     align-items:center;
@@ -133,9 +132,9 @@ export const SouthWind = ()=>{
                     text-align:center;
                     background-color:#a5d4ff;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:40px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #f93e13
                 }
             `}

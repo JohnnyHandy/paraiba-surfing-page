@@ -5,15 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const infoMenu = (props)=>{
     console.log(props.itemArray)
     let itemName = null
+    let heightStyle = null
     itemName = props.itemArray ? props.itemArray.map((i,index)=>{
-        return (<Row className='menu' onClick={()=>{props.spotChange(index)}} id={index} key={index}>{i}</Row>)
+        heightStyle = 100/props.itemArray.length
+        let style = {height:heightStyle.toString()+'%'}
+        return (<Row className='menu' style={style} onClick={()=>{props.spotChange(index)}} id={index} key={index}>{i}</Row>)
     }):null
 
-    return(
-        <div>
-            {itemName}
-        </div>
-    )
+    return <div className='infoMenu'>{itemName}</div>
 }
 
 export default infoMenu

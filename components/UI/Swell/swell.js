@@ -8,8 +8,8 @@ export const NorthSwell = ()=>{
             {`
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:lightblue;
                     display:flex;
                     align-items:center;
@@ -17,9 +17,9 @@ export const NorthSwell = ()=>{
                     text-align:center;
                     background-color:#11114e;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:40px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px lightblue
                 }
             `}
@@ -37,8 +37,8 @@ export const NorthEastSwell = ()=>{
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
                     text-align:center;
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#30ba80;
                     display:flex;
                     align-items:center;
@@ -46,9 +46,9 @@ export const NorthEastSwell = ()=>{
                     text-align:center;
                     background-color:#11114e;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:30px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #30ba80
                 }
             `}
@@ -66,8 +66,8 @@ export const EastSwell = ()=>{
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
                     text-align:center;
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#f2e237;
                     display:flex;
                     align-items:center;
@@ -75,9 +75,9 @@ export const EastSwell = ()=>{
                     text-align:center;
                     background-color:#11114e;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:40px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #f2e237
                 }
             `}
@@ -94,8 +94,8 @@ export const SouthEastSwell = ()=>{
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
                     text-align:center;
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#db8f0d;
                     display:flex;
                     align-items:center;
@@ -103,9 +103,9 @@ export const SouthEastSwell = ()=>{
                     text-align:center;
                     background-color:#11114e;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:30px;
+                    font-size:12px;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #f2e237
                 }
             `}
@@ -123,8 +123,8 @@ export const SouthSwell = ()=>{
                 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
                 div{
                     text-align:center;
-                    height:60px;
-                    width:60px;
+                    height:15px;
+                    width:15px;
                     color:#f93e13;
                     display:flex;
                     align-items:center;
@@ -132,9 +132,9 @@ export const SouthSwell = ()=>{
                     text-align:center;
                     background-color:#11114e;
                     font-family:'Rubik Mono One', sans-serif;
-                    font-size:40px;
+                    font-size10;
                     border-radius:100%;
-                    padding:15px;
+                    padding:12px;
                     border: solid 1px #f93e13
                 }
             `}
