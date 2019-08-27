@@ -3,9 +3,10 @@ import {Row} from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const infoMenu = (props)=>{
+    console.log(props.itemArray)
     let itemName = null
     itemName = props.itemArray ? props.itemArray.map((i,index)=>{
-        return (<Row className='menu' onClick={()=>{props.spotChange(i,index)}} id={index} key={index}>{i}</Row>)
+        return (<Row className='menu' onClick={()=>{props.spotChange(index)}} id={index} key={index}>{i}</Row>)
     }):null
 
     return(
