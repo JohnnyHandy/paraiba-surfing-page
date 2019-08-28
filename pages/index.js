@@ -7,9 +7,8 @@ import Selector from '../components/UI/Selector/selector'
 
 const landing = ()=>{
     const [city, setCity] = useState(undefined);
-    const spotChangeHandler=(city)=>{
-       setCity(city)
-       console.log(city)
+    const spotChangeHandler=(cityName)=>{
+        cityName !== city ? setCity(cityName) : setCity(undefined)
     }
     let info = city ? <Info city={city}/> : null
     return(
@@ -22,10 +21,12 @@ const landing = ()=>{
         {info}
         <style jsx global>
             {`
-            @import url('https://fonts.googleapis.com/css?family=Bitter|Lato&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Bitter|Lato|Pacifico&display=swap');
             body{
-                background:url('https://i.imgur.com/obY0LIq.jpg');
+                background:url('https://images.pexels.com/photos/1667003/pexels-photo-1667003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
                 background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
             }
             div .title{
                 text-align:center;
@@ -83,20 +84,6 @@ const landing = ()=>{
                 color:white;
                 font-family:'Bitter',sans-serif;
                 letter-spacing:2px
-            }
-            .zoom{
-                transition:.2s;
-            }
-            .zoom:hover{
-                transform:scale(1.2);
-            }
-            img{
-                max-height:100%;
-                max-width:100%
-            }
-            .card-img{
-                max-height:150px;
-                min-height:120px
             }
             .card-footer{
                 margin:0;
