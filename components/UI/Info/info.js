@@ -252,7 +252,7 @@ const info = (props)=>{
     
    return props.city !=='' ? (
         <Container className='info'>
-            <Row>
+            <Row className='firstrow'>
                 <Col sm='2'>
                     {city.name}
                 </Col>
@@ -260,17 +260,18 @@ const info = (props)=>{
                     {itemArray[index]}
                 </Col>
             </Row>
-            <Row>
-                <Col sm='2'>
+            <Row className='secondrow'>
+                <Col sm='2' className='menucol'>
                    <Menu 
                    spotChange = {(index)=>spotChangeHandler(index)}
                    itemArray = {itemArray}/>
                 </Col>
-                <Col sm='4'> 
+                <Col sm='4' className='infotext'> 
                     <Picture
                     picture = {picArray[index]}/>
                 </Col>
-                <Col sm='4'>
+                <Col sm='4' 
+                    className='infotext'>
                     {textArray[index]}
                 </Col>
                 <Col sm='1'>

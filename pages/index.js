@@ -42,13 +42,37 @@ const landing = ()=>{
                 border:1px solid black
             }
             .infoMenu{
-                height:auto
+                height:100%;
+                text-align:center
             }
 
             .menu{
-                margin:auto;
+                background-color:lightblue;
                 border-style:solid;
-                border-width:0px 1px 0px 1px
+                border-width:1px 0 1px 0;
+                display:flex;
+                align-items:center;
+                justify-content:center    
+            }
+
+            .menucol{
+                border-style:solid;
+                border-width: 0px 1px;
+                background-color:lightblue
+            }
+
+            .infotext{
+                display:flex;
+                align-items:center;
+                justify-content:center
+            }
+
+            .firstrow{
+                height:30px
+            }
+
+            .secondrow{
+                height:300px
             }
             h1{
                 color:white;
@@ -71,7 +95,8 @@ const landing = ()=>{
                 max-width:100%
             }
             .card-img{
-                max-height:150px
+                max-height:150px;
+                min-height:120px
             }
             .card-footer{
                 margin:0;

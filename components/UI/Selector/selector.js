@@ -16,7 +16,7 @@ const selector = (props)=>{
             </Col>
             <Col>
                 <Card className='zoom img'>
-                    <CardImg src='https://i.imgur.com/yG5jADA.jpg'/>
+                    <CardImg src='https://i.imgur.com/ulEtAav.png'/>
                     <CardFooter onClick={()=>props.spotChange(actionTypes.CABEDELO)}>Cabedelo</CardFooter>
                 </Card>
             </Col>
@@ -28,8 +28,8 @@ const selector = (props)=>{
             </Col>
             <Col>
                 <Card className='zoom img'>
-                    <CardImg src='https://i.imgur.com/S68CG5u.jpg'/>
-                    <CardFooter onClick={()=>props.spotChange(actionTypes.BAIA_DA_TRAICAO)}>Baía da Traição</CardFooter>
+                    <CardImg src='https://i.imgur.com/PAL8eum.png'/>
+                    <CardFooter style={{'white-space':'nowrap'}} onClick={()=>props.spotChange(actionTypes.BAIA_DA_TRAICAO)}>Baía da Traição</CardFooter>
                 </Card>
             </Col>
             <Col>
