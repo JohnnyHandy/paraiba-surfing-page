@@ -7,19 +7,19 @@ const swell = (props)=>{
     swellElement = props.swell ? props.swell.map((i,index)=>{
         switch(i){
             case 'N':
-                return(<NorthSwell/>)
+                return(<NorthSwell key={i}/>)
             break
             case 'NE':
-                return(<NorthEastSwell/>)
+                return(<NorthEastSwell key={i}/>)
             break
             case 'E' :
-                return(<EastSwell/>)
+                return(<EastSwell key={i}/>)
             break
             case 'SE':
-                return(<SouthEastSwell/>)
+                return(<SouthEastSwell key={i}/>)
             break
             case 'S':
-                return(<SouthSwell/>)
+                return(<SouthSwell key={i}/>)
             break
             default:''
             return  null
@@ -29,7 +29,7 @@ const swell = (props)=>{
     return (
         <>
           <h5>Swell</h5>
-          <div style={{display:'flex',justifyContent:'center'}}>
+          <div style={{display:'flex',justifyContent:'center',marginBottom:'5px'}}>
           {swellElement}
           </div>
           

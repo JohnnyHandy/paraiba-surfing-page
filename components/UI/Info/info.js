@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import {Container,Row,Col} from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './info.css'
 
 import * as actionTypes from '../../../assets/utility/actionTypes'
 
@@ -28,22 +29,22 @@ const info = (props)=>{
                     graminha:{
                         name:'Graminha',
                         picture:'https://i.imgur.com/9dJlvlt.jpg',
-                        text:'Localizada na capital, a graminha é um fundo de areia que fornece boas ondas nos meses de verão, quando recebe ondulações do quadrante norte',
+                        text:'Localizada na capital, a graminha é um fundo de areia que recebe boas ondas nos meses de verão, quando recebe ondulações do quadrante norte',
                         swellDirection:['N','NE'],
                         windDirection:['N','NE','SE'],
                         crowd:'Baixo',
                         tide:'Seca ou Cheia',
                         break:'Areia',
-                        season:'Verão - (Novembro a Março)'
+                        season:'Verão'
                     },
                     havaizinho:{
                         name:'Havaízinho',
-                        picture:'https://i.imgur.com/1MrcV27.png',
-                        text:'Um dos melhores picos de surf do estado, essa bancada de pedras fica localizada a 800m da praia e funciona sempre com vento terral e/ou fraco, com ondulação constante. para chegar ao pico, são necessários 15 minutos de remada',
+                        picture:'https://i.imgur.com/PzSkCB9.png?1',
+                        text:'Um dos melhores picos de surf do estado, essa bancada de pedras fica localizada a 800m da praia e funciona sempre com vento terral e/ou fraco, com ondulação constante. Para chegar ao pico, são necessários 15 minutos de remada',
                         swellDirection:['N','NE','SE','S'],
                         windDirection:['N','NE','SE','S'],
                         crowd:'Baixo',
-                        tide:'Meia-maré secando ou enchendo',
+                        tide:'Meia-maré secando ou seca enchendo',
                         break:'Pedra',
                         season:'Ano todo'
                     }
@@ -61,7 +62,7 @@ const info = (props)=>{
                         swellDirection:['N','NE','SE','S'],
                         windDirection:['N','NE','SE','S'],
                         crowd:'Baixo',
-                        tide:'Meia-maré secando ou enchendo',
+                        tide:'Meia-maré secando ou seca enchendo',
                         break:'Pedra',
                         season:'Ano todo'
                     },
@@ -74,7 +75,7 @@ const info = (props)=>{
                         crowd:'Alto',
                         tide:'Seca ou Cheia',
                         break:'Areia',
-                        season:'Inverno  (Maio a Setembro)'
+                        season:'Inverno'
                     },
                     dique:{
                         name:'Dique de Cabedelo',
@@ -85,7 +86,7 @@ const info = (props)=>{
                         crowd:'Alto',
                         tide:'Seca ou Cheia',
                         break:'Areia',
-                        season:'Inverno  (Maio a Setembro)'
+                        season:'Inverno'
                     }
                 }
             }
@@ -97,13 +98,13 @@ const info = (props)=>{
                     enseada:{
                         name:'Enseada de coqueirinho',
                         picture:'https://i.imgur.com/8nOXHSZ.jpg',
-                        text:'Uma das praia mais paradisíacas do estado também é famosa pelas suas ondas, geralmente longas direitas.',
+                        text:'Uma das praia mais paradisíacas do estado também é famosa pelas suas ondas de boa formação.',
                         swellDirection:['S','SE','E'],
                         windDirection:['SE','S'],
                         crowd:'Médio',
                         tide:'Seca',
-                        break:'Fundo de Areia e Fundo de Pedra',
-                        season:'Inverno  (Maio a Setembro)'
+                        break:'Areia e Pedra',
+                        season:'Inverno'
                     },
                     Canyon:{
                         name:'Canyon de coqueirinho',
@@ -114,7 +115,7 @@ const info = (props)=>{
                         crowd:'Médio',
                         tide:'Seca ou Cheia',
                         break:'Areia',
-                        season:'Inverno  (Maio a Setembro)'
+                        season:'Inverno'
 
                     },
                     Arapuca:{
@@ -126,7 +127,7 @@ const info = (props)=>{
                         crowd:'Médio',
                         tide:'Cheia',
                         break:'Fundo de Areia',
-                        season:'Inverno  (Maio a Setembro)'
+                        season:'Inverno'
                     },
                     praiaBela:{
                         name:'Praia Bela',
@@ -137,7 +138,7 @@ const info = (props)=>{
                         crowd:'Baixo',
                         tide:'Seca',
                         break:'Areia',
-                        season:'Inverno  (Maio a Setembro)'
+                        season:'Inverno'
                     }
 
                 }
@@ -258,7 +259,7 @@ const info = (props)=>{
    return props.city !=='' ? (
         <Container className='info'>
             <Row className='firstrow'>
-                <Col style={{fontFamily:"'Pacifico','cursive'",fontSize:'30px'}}>
+                <Col style={{fontFamily:"'Pacifico','cursive'",fontSize:'30px',color:'white',transition:'0.2s'}}>
                     {city.name}
                 </Col>
             </Row>
@@ -284,33 +285,19 @@ const info = (props)=>{
                     <Row style={{display:'inline-block'}}>
                         <Wind wind = {windArray[index]}/>
                     </Row>
-                    <Row>
+                    <Row style={{border:'1px solid aquamarine'}}>
                         <Tide tide={tideArray[index]} /> 
                     </Row>
-                    <Row>
+                    <Row style={{border:'1px solid aquamarine'}}>
                         <Break break={breakArray[index]}/>
                     </Row>
-                    <Row>
+                    <Row style={{border:'1px solid aquamarine'}}>
                         <Season season ={seasonArray[index]} />
                     </Row>
-                    <Row>
+                    <Row style={{border:'1px solid aquamarine'}}>
                         <Crowd crowd = {crowdArray[index]}/>
                     </Row>
                 </Col>
-                {/* <Col sm='1'>
-                    <Row>
-                        {crowdArray[index]}
-                    </Row>
-                    <Row>
-                        {tideArray[index]}
-                    </Row>
-                    <Row>
-                        {breakArray[index]}
-                    </Row>
-                    <Row>
-                        {seasonArray[index]}
-                    </Row>
-                </Col> */}
             </Row>
         </Container>):null
 }

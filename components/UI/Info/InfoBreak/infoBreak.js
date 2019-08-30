@@ -4,8 +4,8 @@ import {Col} from 'reactstrap'
 const breakType = (props)=>{
     return(
         <>
-        <Col>Break</Col>
-        <Col>{props.break}</Col>
+        <Col style={{color:'white',fontFamily:'Bitter',fontWeight:'bold',margin:'auto'}}>Fundo</Col>
+        <Col style={{color:'white',fontFamily:'Bitter'}}>{props.break}</Col>
         </>
     )
 }

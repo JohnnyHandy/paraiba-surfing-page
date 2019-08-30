@@ -4,8 +4,8 @@ import {Col} from 'reactstrap'
 const tide = (props)=>{
     return(
         <>
-        <Col>Tide</Col>
-        <Col>{props.tide}</Col>
+        <Col style={{color:'white',fontFamily:'Bitter',fontWeight:'bold',margin:'auto'}}>Melhor Maré</Col>
+        <Col style={{color:'white',fontFamily:'Bitter'}}>{props.tide}</Col>
         </>
     )
 }

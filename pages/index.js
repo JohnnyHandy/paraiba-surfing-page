@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Media from 'react-media'
 
 import Info from '../components/UI/Info/info'
 import Selector from '../components/UI/Selector/selector'
@@ -16,9 +17,16 @@ const landing = ()=>{
         <h1>Welcome to Paraíba Surfing Page</h1>
             <h3>Meet the best surfing breaks in Paraíba, and also the best conditions to surf!</h3>
         <hr/>
-        <Selector spotChange = {(data)=>spotChangeHandler(data)}  />
+        <Selector
+        city={city} 
+        spotChange = {(data)=>spotChangeHandler(data)}
+        info={info}/>
         <hr/>
+
+        <Media query={{minWidth:430}}>
         {info}
+        </Media>
+        
         <style jsx global>
             {`
             @import url('https://fonts.googleapis.com/css?family=Bitter|Lato|Pacifico&display=swap');
@@ -33,15 +41,7 @@ const landing = ()=>{
                 display:table;
                 margin:auto;
             }
-            .info{
-                height:360px;
-                width:100%;
-                background-color:white;
-            }
-
-            .info .col{
-                border:1px solid black
-            }
+            
             .infoMenu{
                 height:100%;
                 text-align:center
@@ -53,14 +53,17 @@ const landing = ()=>{
                 border-width:1px 0 1px 0;
                 display:flex;
                 align-items:center;
-                justify-content:center    
+                justify-content:center;
+                font-family:'Bitter';
+                transition:0.2s;
+                cursor:pointer  
             }
 
-            .menucol{
-                border-style:solid;
-                border-width: 0px 1px;
-                background-color:lightblue
+            .menu:hover {
+                color:white
             }
+
+            
 
             .infoimage{
                 display:flex;
@@ -79,7 +82,7 @@ const landing = ()=>{
             }
 
             .secondrow{
-                height:300px
+                height:320px
             }
             h1{
                 color:white;

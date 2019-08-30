@@ -1,0 +1,26 @@
+
+@media only screen and (max-width: 600px) {
+    .info{
+        width:100%;
+    }
+    .menucol{
+        border-style:solid;
+        border-width: 0px 1px;
+        background-color:lightblue;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .info{
+        height:380px;
+        width:100%;
+        background-image:url('https://images.pexels.com/photos/699955/pexels-photo-699955.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-size:cover
+    }
+    .menucol{
+        border-style:solid;
+        border-width: 0px 1px;
+        background-color:lightblue;
+        height:90%
+    }
+}

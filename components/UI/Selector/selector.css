@@ -45,6 +45,7 @@
 @media only screen and (min-width: 992px) {
     .zoom{
         transition:.2s;
+        cursor:pointer
     }
     .zoom:hover{
         transform:scale(1.2);
@@ -55,7 +56,7 @@
     }
     .card-img{
         max-height:150px;
-        min-height:120px
+        min-height:120px;
     }
     .selector{
         font-family: 'Pacifico', cursive;
