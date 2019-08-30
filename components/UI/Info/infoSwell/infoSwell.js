@@ -28,7 +28,11 @@ const swell = (props)=>{
     }):null
     return (
         <>
+          <h5>Swell</h5>
+          <div style={{display:'flex',justifyContent:'center'}}>
           {swellElement}
+          </div>
+          
         </>
     )
 }

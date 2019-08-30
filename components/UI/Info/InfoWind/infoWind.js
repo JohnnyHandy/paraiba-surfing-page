@@ -28,7 +28,11 @@ const wind = (props)=>{
     }):null
     return (
         <>
+            <h5>Wind</h5>
+            <div style={{display:'flex',justifyContent:'center'}}>
             {windElement}
+            </div>
+            
         </>
     )
 }

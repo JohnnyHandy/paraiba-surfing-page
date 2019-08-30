@@ -8,6 +8,11 @@ import Menu from './InfoMenu/infoMenu'
 import Picture from './InfoPicture/infoPicture'
 import Swell from './InfoSwell/infoSwell'
 import Wind from './InfoWind/infoWind'
+import Text from './InfoText/infoText'
+import Tide from './InfoTide/infoTide'
+import Crowd from './InfoCrowd/infoCrowd'
+import Break from './InfoBreak/infoBreak'
+import Season from './InfoSeason/infoSeason'
 
 const info = (props)=>{
     const [index,setIndex]=useState(undefined)
@@ -62,7 +67,7 @@ const info = (props)=>{
                     },
                     macaco:{
                         name:'Mar do macaco',
-                        picture:'https://i.imgur.com/vKbPJhj.png',
+                        picture:'https://i.imgur.com/LLW5U1H.png',
                         text:'O pico mais frequentado pelos praticantes de surf da zona metropolitana de João Pessoa. Possui boas ondas para todos os níveis.',
                         swellDirection:['S','SE'],
                         windDirection:['S','SE'],
@@ -253,11 +258,8 @@ const info = (props)=>{
    return props.city !=='' ? (
         <Container className='info'>
             <Row className='firstrow'>
-                <Col sm='2'>
+                <Col style={{fontFamily:"'Pacifico','cursive'",fontSize:'30px'}}>
                     {city.name}
-                </Col>
-                <Col sm='10'>
-                    {itemArray[index]}
                 </Col>
             </Row>
             <Row className='secondrow'>
@@ -266,41 +268,36 @@ const info = (props)=>{
                    spotChange = {(index)=>spotChangeHandler(index)}
                    itemArray = {itemArray}/>
                 </Col>
-                <Col sm='4' className='infotext'> 
+                <Col sm='4' className='infoimage'> 
                     <Picture
                     picture = {picArray[index]}/>
                 </Col>
-                <Col sm='4' 
+                <Col sm='3' 
                     className='infotext'>
-                    {textArray[index]}
+                    <Text text = {textArray[index]}
+                          title = {itemArray[index]}  />
                 </Col>
-                <Col sm='1'>
-                    <Row>
-                        Swell
+                <Col sm='3' style={{display:'grid'}}>
+                    <Row style={{display:'inline-block'}}>
+                        <Swell swell = {swellArray[index]}/>
                     </Row>
-                    <Row>
-                        Wind
-                    </Row>
-                    <Row>
-                        Crowd
-                    </Row>
-                    <Row>
-                        Tide
-                    </Row>
-                    <Row>
-                        Break
-                    </Row>
-                    <Row>
-                        Season
-                    </Row>
-                </Col>
-                <Col sm='1'>
-                    <Row>
-                        <Swell swell={swellArray[index]}/>
-                    </Row>
-                    <Row>
+                    <Row style={{display:'inline-block'}}>
                         <Wind wind = {windArray[index]}/>
                     </Row>
+                    <Row>
+                        <Tide tide={tideArray[index]} /> 
+                    </Row>
+                    <Row>
+                        <Break break={breakArray[index]}/>
+                    </Row>
+                    <Row>
+                        <Season season ={seasonArray[index]} />
+                    </Row>
+                    <Row>
+                        <Crowd crowd = {crowdArray[index]}/>
+                    </Row>
+                </Col>
+                {/* <Col sm='1'>
                     <Row>
                         {crowdArray[index]}
                     </Row>
@@ -313,7 +310,7 @@ const info = (props)=>{
                     <Row>
                         {seasonArray[index]}
                     </Row>
-                </Col>
+                </Col> */}
             </Row>
         </Container>):null
 }

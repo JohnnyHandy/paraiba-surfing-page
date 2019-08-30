@@ -34,7 +34,7 @@ const landing = ()=>{
                 margin:auto;
             }
             .info{
-                height:350px;
+                height:360px;
                 width:100%;
                 background-color:white;
             }
@@ -62,14 +62,20 @@ const landing = ()=>{
                 background-color:lightblue
             }
 
-            .infotext{
+            .infoimage{
                 display:flex;
                 align-items:center;
                 justify-content:center
             }
 
+            .infotext{
+                display:inline-block;
+                text-justify:inter-word;
+                margin:auto
+            }
+
             .firstrow{
-                height:30px
+                height:45px
             }
 
             .secondrow{
