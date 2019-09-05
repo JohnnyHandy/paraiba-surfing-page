@@ -9,7 +9,7 @@ Paraiba Surfing Page aims for those surfers that are not used to the surfing con
 This app was architectured using ReactJS and React Hooks to control the flow of information; Reactstrap was used to compose the layout, with some adaptations to support cross-device compatibility. These adaptations were made using styled jsx tags and CSS stylesheets. This application also makes use of SSR features supported by NextJS.
 
 ## Features
-Cross-device responsiveness
-User-Friendly and intuitive interface
+* Cross-device responsiveness
+* User-Friendly and intuitive interface
 
 ## Visual
