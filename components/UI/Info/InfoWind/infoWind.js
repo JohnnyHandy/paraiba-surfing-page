@@ -27,13 +27,13 @@ const wind = (props)=>{
         }     
     }):null
     return (
-        <>
+        <div>
             <h5>Vento</h5>
             <div style={{display:'flex',justifyContent:'center',marginBottom:'5px'}}>
             {windElement}
             </div>
             
-        </>
+        </div>
     )
 }
 

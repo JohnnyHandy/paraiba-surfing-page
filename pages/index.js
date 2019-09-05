@@ -31,7 +31,7 @@ const landing = ()=>{
             {`
             @import url('https://fonts.googleapis.com/css?family=Bitter|Lato|Pacifico&display=swap');
             body{
-                background:url('https://images.pexels.com/photos/1667003/pexels-photo-1667003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+                background:url('https://images.pexels.com/photos/835615/pexels-photo-835615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;

@@ -1,6 +1,6 @@
-import React from 'react'
-import Media from 'react-media'
-import {Container,Row,Col,Card,CardImg,CardFooter} from 'reactstrap'
+import React from 'react';
+import Media from 'react-media';
+import {Container,Row,Col,Card,CardImg,CardFooter} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './selector.css'
