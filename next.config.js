@@ -1,5 +1,6 @@
 const withCSS = require('@zeit/next-css')
-module.exports=withCSS({
+const withImages = require('next-images')
+module.exports=withImages(withCSS({
     cssLoaderOptions: {
         url: false
       },
@@ -8,4 +9,4 @@ module.exports=withCSS({
     //   importLoaders: 1,
     //   localIdentName: "[local]___[hash:base64:5]",
     // }
-})
+}))

@@ -1,6 +1,5 @@
-body{
-                background:url('https://images.pexels.com/photos/1667003/pexels-photo-1667003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-            }
+@media only screen and (min-width: 992px) {
+    .img{
+        cursor: pointer;
+    }
+}
