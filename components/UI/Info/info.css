@@ -2,6 +2,8 @@
 @media only screen and (max-width: 600px) {
     .info{
         width:100%;
+        background-color:#0e1111;
+        height:100%;
     }
     .menucol{
         border-style:solid;
