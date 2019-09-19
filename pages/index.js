@@ -31,7 +31,6 @@ const landing = ()=>{
 
             </div>
         )}
-            
         </Media>
         {/**<div style={{width:'100%', height:'23px', backgroundColor:'transparent',display:'inline-flex'}}>
              {/*<p style={{float:'left'}}>Paraiba Surfing Page</p>*/}
