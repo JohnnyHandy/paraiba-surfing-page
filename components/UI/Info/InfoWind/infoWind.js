@@ -28,7 +28,7 @@ const wind = (props)=>{
     }):null
     return (
         <div>
-            <h5>Vento</h5>
+            <h5 style={{color:'white'}}>{props.lang === 'PT-BR' ? 'Vento' : 'Wind' }</h5>
             <div style={{display:'flex',justifyContent:'center',marginBottom:'5px'}}>
             {windElement}
             </div>

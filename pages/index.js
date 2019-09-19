@@ -1,21 +1,32 @@
-import React, {useState,useEffect} from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, {useState} from 'react'
 import Media from 'react-media'
 
 import Info from '../components/UI/Info/info'
 import Selector from '../components/UI/Selector/selector'
+import Brasil from '../assets/images/br.svg'
+import Britain from '../assets/images/gb.svg'
+
+import './index.css'
 
 
 const landing = ()=>{
+    const [lang,setLang] = useState('PT-BR')
     const [city, setCity] = useState(undefined);
     const spotChangeHandler=(cityName)=>{
         cityName !== city ? setCity(cityName) : setCity(undefined)
     }
-    let info = city ? <Info city={city}/> : null
+    let info = city ? <Info city={city} lang={lang}/> : null
     return(
     <div className='title'>
-        <h1>Welcome to Paraíba Surfing Page</h1>
-            <h3>Meet the best surfing breaks in Paraíba, and also the best conditions to surf!</h3>
+        <div style={{width:'100%', height:'23px', backgroundColor:'lightblue',display:'inline-flex'}}>
+            <p style={{float:'left'}}>Paraiba Surfing Page</p>
+            <div style={{height:'inherit',width:'80px', marginLeft:'160px'}}>
+                <img className='img' style={{height:'18px', width:'30px', marginBottom:'8px'}} src={Brasil} alt='PT-BR' onClick={()=>setLang('PT-BR')}/>
+                <img className='img'style={{height:'18px', width: '30px', marginBottom:'8px'}} src={Britain} alt='EN-GB' onClick ={()=>setLang('EN-GB')}/>
+            </div>
+        </div>
+        <h1>{ lang === 'PT-BR' ? 'Bem vindo ao Paraiba Surfing Website' : 'Welcome to Paraíba Surfing Page'}</h1>
+            <h3>{ lang === 'PT-BR' ? 'Encontre os informações acerca dos melhores picos de surf da região!': 'Meet the best surfing breaks in Paraíba, together with the best conditions to surf on each break!'}</h3>
         <hr/>
         <Selector
         city={city} 
