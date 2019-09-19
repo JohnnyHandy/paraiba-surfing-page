@@ -18,15 +18,30 @@ const landing = ()=>{
     let info = city ? <Info city={city} lang={lang}/> : null
     return(
     <div className='title'>
-        <div style={{width:'100%', height:'23px', backgroundColor:'lightblue',display:'inline-flex'}}>
-            <p style={{float:'left'}}>Paraiba Surfing Page</p>
-            <div style={{height:'inherit',width:'80px', marginLeft:'160px'}}>
+        <Media query={{small: "(max-width: 430px)"}}>
+        {matches => matches ? (
+            <div style={{width:'100%', height:'23px', backgroundColor:'blue',display:'inline-flex'}}>
+                    <img className='img' style={{height:'18px', width:'30px', marginBottom:'8px'}} src={Brasil} alt='PT-BR' onClick={()=>setLang('PT-BR')}/>
+                    <img className='img'style={{height:'18px', width: '30px', marginBottom:'8px'}} src={Britain} alt='EN-GB' onClick ={()=>setLang('EN-GB')}/>
+            </div>
+        ) : (
+            <div style={{width:'100%', height:'23px', backgroundColor:'red',display:'inline-flex'}}>
+                    <img className='img' style={{height:'18px', width:'30px', marginBottom:'8px'}} src={Brasil} alt='PT-BR' onClick={()=>setLang('PT-BR')}/>
+                    <img className='img'style={{height:'18px', width: '30px', marginBottom:'8px'}} src={Britain} alt='EN-GB' onClick ={()=>setLang('EN-GB')}/>
+
+            </div>
+        )}
+            
+        </Media>
+        {/**<div style={{width:'100%', height:'23px', backgroundColor:'transparent',display:'inline-flex'}}>
+             {/*<p style={{float:'left'}}>Paraiba Surfing Page</p>*/}
+            {/**<div style={{height:'inherit',width:'80px', marginLeft:'0'}}>
                 <img className='img' style={{height:'18px', width:'30px', marginBottom:'8px'}} src={Brasil} alt='PT-BR' onClick={()=>setLang('PT-BR')}/>
                 <img className='img'style={{height:'18px', width: '30px', marginBottom:'8px'}} src={Britain} alt='EN-GB' onClick ={()=>setLang('EN-GB')}/>
             </div>
-        </div>
+        </div>*/}
         <h1>{ lang === 'PT-BR' ? 'Bem vindo ao Paraiba Surfing Website' : 'Welcome to Paraíba Surfing Page'}</h1>
-            <h3>{ lang === 'PT-BR' ? 'Encontre os informações acerca dos melhores picos de surf da região!': 'Meet the best surfing breaks in Paraíba, together with the best conditions to surf on each break!'}</h3>
+            <h3>{ lang === 'PT-BR' ? 'Encontre os informações acerca dos melhores picos de surf da região!': 'Meet the best surfing breaks in Paraíba!'}</h3>
         <hr/>
         <Selector
         city={city} 
