@@ -13,3 +13,4 @@ This app was architectured using ReactJS and React Hooks to control the flow of 
 * User-Friendly and intuitive interface
 
 ## Visual
+![Image taken using Gyazo](https://imgur.com/waxVI9u)
